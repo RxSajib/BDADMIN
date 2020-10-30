@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAndSplashScreen.LoginPage">
+
+
+
+    <LinearLayout
+        android:id="@+id/LiniLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/dubizzel"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp">
+
+        </ImageView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:textSize="@dimen/_10sdp"
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <EditText
+            android:id="@+id/EmailID"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:hint="Enter email"
+            android:textColor="@color/carbon_black_87"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sdp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:textSize="@dimen/_10sdp"
+            android:text="Password"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <EditText
+            android:id="@+id/PasswordID"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:hint="Enter password"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/carbon_black_87"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/LoginProgressID"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp">
+
+            </ProgressBar>
+
+            <RelativeLayout
+                android:id="@+id/LoginButtonID"
+                android:background="@drawable/loginbutton_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/carbon_white"
+                    android:text="CONTINUE"
+                    android:fontFamily="@font/victormoo_reg"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

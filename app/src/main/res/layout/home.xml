@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BottomPage.Home">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/SearchBox"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/LocationID"
+                android:background="@color/colorPrimary"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/location_white"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_15sdp">
+                    </ImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:text="Dhaka"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/LocationID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/SearchInput"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/SearchIcon"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/carbon_black_54"
+                    android:hint="Search"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/SearchIcon"
+                    android:layout_width="@dimen/_15sdp"
+                    android:src="@drawable/search_black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_height="@dimen/_15sdp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ScrollView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/SearchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/DailyInsturmentID"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/dailyinstument"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:gravity="center"
+                                    android:text="Daily\nInstrument"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:id="@+id/MobileID"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/mobilephone"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Mobile"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:id="@+id/Electronic"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/tv"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Electronic"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/VecicleID"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/car"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Vecicle"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:id="@+id/PropartyID"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/proparty_home"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Property"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:id="@+id/JobID"
+                        android:layout_width="0dp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/job"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Job"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:id="@+id/FormerJobID"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/worldjob"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Former Job"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_width="0dp"
+                        android:id="@+id/ServicesID"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/services"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:gravity="center"
+                                    android:text="Services\nIT and Software"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/HomeInstument"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/homeleaving"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Home\nInstument"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout><RelativeLayout
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_weight="1"
+                    app:cardElevation="@dimen/_2sdp"
+                    android:id="@+id/FationID"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/watch"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_30sdp">
+                            </ImageView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/carbon_black_87"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="Fation"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+
+                            </com.google.android.material.textview.MaterialTextView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_width="0dp"
+                    app:cardElevation="@dimen/_2sdp"
+                    android:id="@+id/SportsID"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/foodball"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_30sdp">
+                            </ImageView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/carbon_black_87"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="Sports"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+
+                            </com.google.android.material.textview.MaterialTextView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:cardElevation="@dimen/_2sdp"
+                    android:id="@+id/BugnessInd"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/bugness_indress"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_30sdp">
+                            </ImageView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/carbon_black_87"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="Business\nIndustry"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+
+                            </com.google.android.material.textview.MaterialTextView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:id="@+id/EducationID"
+                        android:layout_width="0dp"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/education"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Education"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        android:id="@+id/AnimalsID"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/cow"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Animals"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_weight="1"
+                        app:cardElevation="@dimen/_2sdp"
+                        android:id="@+id/AgricultureID"
+                        android:layout_width="0dp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/anmals"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Agriculture"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

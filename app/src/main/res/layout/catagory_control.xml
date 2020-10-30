@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/CatagorynameID"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="Update name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:text="you can customize your subcategory by input category name and update also remove your subcategory"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_11sdp"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/carbon_red_400"
+            app:cornerRadius="@dimen/_10sdp"
+            android:id="@+id/RemoveID"
+            android:textColor="@color/carbon_white"
+            android:text="REMOVE"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="@dimen/_10sdp"
+            android:textColor="@color/carbon_white"
+            android:text="UPDATE"
+            android:id="@+id/UpdateButtonID"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
